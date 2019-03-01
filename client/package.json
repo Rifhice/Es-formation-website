@@ -1,0 +1,47 @@
+{
+  "name": "es_formation",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "npm start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "connected-react-router": "^6.3.1",
+    "draft-js": "^0.10.5",
+    "history": "^4.7.2",
+    "js-file-download": "^0.4.4",
+    "moment": "^2.22.2",
+    "normalize.css": "^8.0.0",
+    "prop-type": "0.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-file-picker": "0.0.5",
+    "react-mde": "^5.8.0",
+    "react-redux": "^6.0.1",
+    "react-responsive": "^6.1.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^2.1.5",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0",
+    "showdown": "^1.8.7",
+    "socket.io-client": "^2.1.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

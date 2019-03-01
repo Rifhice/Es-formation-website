@@ -1,0 +1,10 @@
+.SBbutton-wrapper{
+    display: flex
+}
+.SBbutton-icon{
+    position: sticky;
+    left:0
+}
+.SBbutton-text{
+    align-self: center
+}

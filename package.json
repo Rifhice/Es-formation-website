@@ -1,0 +1,27 @@
+{
+    "name": "esformation",
+    "version": "1.0.0",
+    "description": "Es-formation website",
+    "devDependencies": {
+        "concurrently": "^4.0.1"
+    },
+    "scripts": {
+        "client": "cd client && npm run dev",
+        "server": "cd server && nodemon server.js",
+        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+        "init:db": "cd server && npm run init:db",
+        "install:all:prod": "concurrently --kill-others-on-fail \"cd server && npm install --production\" \" cd client && npm install --production\"",
+        "install:all:dev": "cd server && npm install && cd ../client && npm install",
+        "client:build": "cd client && npm run build:production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HmFlashy/Prello.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HmFlashy/Prello/issues"
+    },
+    "homepage": "https://github.com/HmFlashy/Prello#readme"
+}
