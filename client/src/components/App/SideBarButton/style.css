@@ -6,5 +6,6 @@
     left:0
 }
 .SBbutton-text{
-    align-self: center
+    align-self: center;
+    margin-top: inherit
 }
