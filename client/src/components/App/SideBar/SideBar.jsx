@@ -66,7 +66,7 @@ export default class MainPage extends Component {
                         ? <div className='sidebar-container'
                             style={{ width: this.state.isFolded ? 100 : 200 }}>
                             <div
-                                onClick={() => this.props.history.push('/Home')}
+                                onClick={() => { this.setState({ current: -1 }); this.props.history.push('/Home') }}
                             >
                                 <Image src='/logo.png' size='small' className='company-logo' />
                             </div>
@@ -79,19 +79,23 @@ export default class MainPage extends Component {
                                     <SideBarButton
                                         icon='calendar'
                                         text='Calendrier'
-                                        color={this.state.current === 0 ? "green" : "black"}
+                                        isFocused={this.state.current === 0}
+                                        focusedColor={"green"}
+                                        unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
                                         isMoving={this.state.isMoving}
                                     />
                                 </div>
                                 <div
                                     className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 1 }); this.props.history.push('/Formations') }}
+                                    onClick={() => { this.setState({ current: 1 }); this.props.history.push('/Training') }}
                                 >
                                     <SideBarButton
                                         icon='lightbulb'
                                         text='Nos formations'
-                                        color={this.state.current === 1 ? "green" : "black"}
+                                        isFocused={this.state.current === 1}
+                                        focusedColor={"green"}
+                                        unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
                                         isMoving={this.state.isMoving}
                                     />
@@ -103,7 +107,9 @@ export default class MainPage extends Component {
                                     <SideBarButton
                                         icon='book'
                                         text='Nos ateliers'
-                                        color={this.state.current === 2 ? "green" : "black"}
+                                        isFocused={this.state.current === 2}
+                                        focusedColor={"green"}
+                                        unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
                                         isMoving={this.state.isMoving}
                                     />
@@ -115,7 +121,9 @@ export default class MainPage extends Component {
                                     <SideBarButton
                                         icon='box'
                                         text='Boîte à outils'
-                                        color={this.state.current === 3 ? "green" : "black"}
+                                        isFocused={this.state.current === 3}
+                                        focusedColor={"green"}
+                                        unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
                                         isMoving={this.state.isMoving}
                                     />
@@ -127,7 +135,9 @@ export default class MainPage extends Component {
                                     <SideBarButton
                                         icon='phone'
                                         text='Contacts'
-                                        color={this.state.current === 4 ? "green" : "black"}
+                                        isFocused={this.state.current === 4}
+                                        focusedColor={"green"}
+                                        unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
                                         isMoving={this.state.isMoving}
                                     />
@@ -139,7 +149,9 @@ export default class MainPage extends Component {
                                     <SideBarButton
                                         icon='question'
                                         text='Qui sommes-nous ?'
-                                        color={this.state.current === 5 ? "green" : "black"}
+                                        isFocused={this.state.current === 5}
+                                        focusedColor={"green"}
+                                        unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
                                         isMoving={this.state.isMoving}
                                     />
@@ -150,6 +162,7 @@ export default class MainPage extends Component {
                                     name={this.state.isFolded ? 'right arrow' : 'left arrow'}
                                     className='sidebar-size-button'
                                     size="large"
+                                    color="grey"
                                     onClick={() => {
                                         this.setState({ isFolded: !this.state.isFolded, isMoving: true })
                                         setTimeout(() => this.setState({ isMoving: false }), 1000)

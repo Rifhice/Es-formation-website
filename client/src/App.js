@@ -9,9 +9,11 @@ import { history } from './history'
 import HomeScreen from './containers/HomeScreen.container'
 import CalendarScreen from './containers/Calendar.container'
 import AboutUsScreen from './containers/AboutUsScreen.container'
+import TrainingScreen from './containers/TrainingScreen.container'
 import SideBar from './containers/SideBar.container'
 import Contacts from './containers/Contacts.container'
 import Footer from './components/App/Footer'
+import { Transition } from "semantic-ui-react";
 
 class App extends Component {
   render() {
@@ -24,6 +26,7 @@ class App extends Component {
               <Switch>
                 <Route exact path="/Home" component={HomeScreen} />
                 <Route exact path="/Calendar" component={CalendarScreen} />
+                <Route exact path="/Training" component={TrainingScreen} />
                 <Route exact path="/AboutUs" component={AboutUsScreen} />
                 <Route exact path="/Contacts" component={Contacts} />
                 <Redirect to="/Home" />

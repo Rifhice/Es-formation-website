@@ -12,31 +12,33 @@ export default class Contacts extends Component {
     }
 
     render() {
-        return (<div style={{ width: "100%", marginTop: "30px" }}>
-            <Header as='h2'>Contacts</Header>
-            <div style={{ marginTop: "50px", display: "flex", flexDirection: "column" }}>
-                <Segment style={{ width: "90%", marginLeft: "5%" }}>
-                    <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <div style={{ textAlign: "justify" }}>
-                            <h3><Icon name="map marker alternate" /> Adresse</h3>
-                            <p>68 avenue du 8 mai 1945
+        return (<div style={{ width: "100%", backgroundColor: "#121613" }}>
+            <div style={{ width: "75%", display: "inline-block" }} className="slide-in">
+                <Header as='h1' style={{ marginTop: "30px", color: "white" }}>Contacts</Header>
+                <div style={{ marginTop: "50px", display: "flex", flexDirection: "column" }}>
+                    <Segment style={{ width: "90%", marginLeft: "5%", backgroundColor: "#121613", "border-style": "dotted" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", color: "white" }}>
+                            <div style={{ textAlign: "justify" }}>
+                                <h2><Icon name="map marker alternate" /> Adresse</h2>
+                                <p>68 avenue du 8 mai 1945
                             <br />
-                                48000 Mende
+                                    48000 Mende
                             <br />
-                                France, Lozère
+                                    France, Lozère
                             </p>
-                            <h3><Icon name="address card" /> Business</h3>
-                            <p>es-formation@gmail.com
+                                <h2><Icon name="address card" /> Business</h2>
+                                <p>es-formation@gmail.com
                                 <br />+33 4 66 49 29 74
                                 <br />+33 4 66 49 29 74
                             </p>
-                            <h3><Icon name="users" /> Réseaux sociaux</h3>
+                                <h2><Icon name="users" /> Réseaux sociaux</h2>
+                            </div>
+                            <div>
+                                <Image src="./map.png" size="big"></Image>
+                            </div>
                         </div>
-                        <div>
-                            <Image src="./map.png" size="big"></Image>
-                        </div>
-                    </div>
-                </Segment>
+                    </Segment>
+                </div>
             </div>
         </div>
         )

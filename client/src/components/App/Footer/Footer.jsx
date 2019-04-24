@@ -18,8 +18,9 @@ export default class MainPage extends Component {
             {(matches) =>
                 matches
                     ? <div style={{
-                        "border-right": "0.1px solid lightgray",
-                        "box-shadow": "0px 0px 12px #aaa",
+                        "border-right": "0.1px solid black",
+                        "box-shadow": "0px 0px 12px #black",
+                        backgroundColor: "#292c28"
                     }}>
                         <div style={{
                             marginTop: "20px",
@@ -27,22 +28,22 @@ export default class MainPage extends Component {
                             justifyContent: "space-around",
                             paddingBottom: "50px",
                         }}>
-                            <div style={{ marginTop: "50px", textAlign: "justify" }}>
+                            <div style={{ marginTop: "50px", textAlign: "justify", color: "white" }}>
                                 <h2>ES Formations</h2>
                                 <p>Votre super slogan qui claque !</p>
                             </div>
-                            <div style={{ marginTop: "50px", textAlign: "justify" }}>
+                            <div style={{ marginTop: "50px", textAlign: "justify", color: "white" }}>
                                 <h3><Icon name="linkify" />Links</h3>
                                 <div style={{ display: "flex", flexDirection: "column" }}>
-                                    <a href="/Home"><Icon name="home" />Acceuil</a>
-                                    <a href="/Calendar"><Icon name="calendar" />Calendrier</a>
-                                    <a href="/"><Icon name="lightbulb" />Nos formations</a>
-                                    <a href="/"><Icon name="book" />Nos ateliers</a>
-                                    <a href="/"><Icon name="box" />Boîte à outils</a>
-                                    <a href="/"><Icon name="question" />Qui sommes-nous?</a>
+                                    <a style={{ "color": "#29b02e" }} href="/Home"><Icon name="home" />Acceuil</a>
+                                    <a style={{ "color": "#29b02e" }} href="/Calendar"><Icon name="calendar" />Calendrier</a>
+                                    <a style={{ "color": "#29b02e" }} href="/"><Icon name="lightbulb" />Nos formations</a>
+                                    <a style={{ "color": "#29b02e" }} href="/"><Icon name="book" />Nos ateliers</a>
+                                    <a style={{ "color": "#29b02e" }} href="/"><Icon name="box" />Boîte à outils</a>
+                                    <a style={{ "color": "#29b02e" }} href="/AboutUs"><Icon name="question" />Qui sommes-nous?</a>
                                 </div>
                             </div>
-                            <div style={{ marginTop: "50px", textAlign: "justify" }}>
+                            <div style={{ marginTop: "50px", textAlign: "justify", color: "white" }}>
                                 <h3><Icon name="map marker alternate" /> Adresse</h3>
                                 <p>68 avenue du 8 mai 1945
                                     <br />
@@ -56,12 +57,12 @@ export default class MainPage extends Component {
                                     <br />+33 4 66 49 29 74
                                 </p>
                             </div>
-                            <div style={{ marginTop: "50px", textAlign: "justify" }}>
+                            <div style={{ marginTop: "50px", textAlign: "justify", color: "white" }}>
                                 <h3><Icon name="users" /> Réseaux sociaux</h3>
                                 <Icon name="linkedin" />
                             </div>
                         </div>
-                        <p style={{ position: "relative", bottom: "5px", paddingLeft: "20px" }}><Icon name="copyright" />2019 ES Formations, Tout droits réservés.</p>
+                        <p style={{ position: "relative", bottom: "5px", paddingLeft: "20px", color: "white" }}><Icon name="copyright" />2019 ES Formations, Tout droits réservés.</p>
                     </div>
                     : <div style={{
                         "border-right": "0.1px solid lightgray",
@@ -80,12 +81,12 @@ export default class MainPage extends Component {
                             <div style={{ marginTop: "50px", textAlign: "justify" }}>
                                 <Icon name="linkify" />
                                 <div style={{ display: "flex", flexDirection: "column" }}>
-                                    <a href="/Home"><Icon name="home" />Acceuil</a>
-                                    <a href="/Calendar"><Icon name="calendar" />Calendrier</a>
-                                    <a href="/"><Icon name="lightbulb" />Nos formations</a>
-                                    <a href="/"><Icon name="book" />Nos ateliers</a>
-                                    <a href="/"><Icon name="box" />Boîte à outils</a>
-                                    <a href="/"><Icon name="question" />Qui sommes-nous?</a>
+                                    <a style={{ "background-color": "#29b02e" }} href="/Home"><Icon name="home" />Acceuil</a>
+                                    <a style={{ "background-color": "#29b02e" }} href="/Calendar"><Icon name="calendar" />Calendrier</a>
+                                    <a style={{ "background-color": "#29b02e" }} href="/"><Icon name="lightbulb" />Nos formations</a>
+                                    <a style={{ "background-color": "#29b02e" }} href="/"><Icon name="book" />Nos ateliers</a>
+                                    <a style={{ "background-color": "#29b02e" }} href="/"><Icon name="box" />Boîte à outils</a>
+                                    <a style={{ "background-color": "#29b02e" }} href="/AboutUs"><Icon name="question" />Qui sommes-nous?</a>
                                 </div>
                             </div>
                             <div style={{ marginTop: "50px", textAlign: "justify" }}>
