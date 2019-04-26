@@ -12,7 +12,10 @@ client/build
 
 # production
 client/build
-
+node_modules
+.env
+error.log
+combined.log
 # misc
 .DS_Store
 .env.local

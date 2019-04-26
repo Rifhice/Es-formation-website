@@ -1,27 +1,39 @@
 {
-    "name": "esformation",
-    "version": "1.0.0",
-    "description": "Es-formation website",
-    "devDependencies": {
-        "concurrently": "^4.0.1"
-    },
-    "scripts": {
-        "client": "cd client && npm run dev",
-        "server": "cd server && nodemon server.js",
-        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-        "init:db": "cd server && npm run init:db",
-        "install:all:prod": "concurrently --kill-others-on-fail \"cd server && npm install --production\" \" cd client && npm install --production\"",
-        "install:all:dev": "cd server && npm install && cd ../client && npm install",
-        "client:build": "cd client && npm run build:production"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/HmFlashy/Prello.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/HmFlashy/Prello/issues"
-    },
-    "homepage": "https://github.com/HmFlashy/Prello#readme"
+  "name": "Es-formation",
+  "description": "Site officiel es-formation",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npm run init:db && nodemon server.js",
+    "init:db": "node config/initDB.js",
+    "test": "nyc mocha api/test/*.js --timeout 10000 --recursive --exit",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.2",
+    "express-bearer-token": "^2.2.0",
+    "express-oauth-server": "^2.0.0",
+    "express-validator": "^5.3.0",
+    "helmet": "^3.14.0",
+    "history": "^4.7.2",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HmFlashy/prello.git"
+  },
+  "license": "ISC",
 }

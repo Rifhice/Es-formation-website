@@ -3,13 +3,13 @@ mongoose.Promise = Promise;
 const logger = require('../logger')
 
 // Connect to Mongoose
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true
 })
 
-mongoose.connection.once('open', function() {
-  logger.info('Connected to mongoDB') 
-}).on('error', function(error){
+mongoose.connection.once('open', function () {
+  logger.info('Connected to mongoDB')
+}).on('error', function (error) {
   logger.info('Connection error:', error)
 })
 
