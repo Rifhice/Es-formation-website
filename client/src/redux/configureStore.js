@@ -7,9 +7,14 @@ import { history } from '../history'
 export default (initialState = {}) => {
     const store = createStore(
         rootReducer(history),
-        compose(
-            applyMiddleware(routerMiddleware(history), thunk), window.__REDUX_DEVTOOLS_EXTENSION__()
-        )
+        window && window.__REDUX_DEVTOOLS_EXTENSION__ ?
+            compose(
+                applyMiddleware(routerMiddleware(history), thunk), window.__REDUX_DEVTOOLS_EXTENSION__()
+            )
+            :
+            compose(
+                applyMiddleware(routerMiddleware(history), thunk)
+            )
     );
     return store
 }
