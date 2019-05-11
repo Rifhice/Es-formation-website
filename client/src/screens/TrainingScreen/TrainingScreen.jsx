@@ -11,7 +11,7 @@ export default class Training extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            current: queryString.parse(this.props.location.search).selected.match(/^\d+$/) ? parseInt(queryString.parse(this.props.location.search).selected) : 0
+            current: queryString.parse(this.props.location.search).selected && queryString.parse(this.props.location.search).selected.match(/^\d+$/) ? parseInt(queryString.parse(this.props.location.search).selected) : 0
         }
         this.formations = [
             {
