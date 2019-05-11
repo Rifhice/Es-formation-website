@@ -39,7 +39,7 @@ export default class Training extends Component {
     }
 
     render() {
-        const selected = queryString.parse(this.props.location.search).selected.match(/^\d+$/) ? queryString.parse(this.props.location.search).selected : this.state.current
+        const selected = queryString.parse(this.props.location.search).selected && queryString.parse(this.props.location.search).selected.match(/^\d+$/) ? queryString.parse(this.props.location.search).selected : this.state.current
         return (<div style={{ width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
             <div style={{ width: "75%", display: "inline-block" }} className="slide-in">
                 <Header as='h1' style={{ marginTop: "30px", color: "#29b02e" }}>Se former et former ses équipes</Header>
