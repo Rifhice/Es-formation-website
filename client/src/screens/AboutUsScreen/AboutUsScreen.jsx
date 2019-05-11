@@ -14,8 +14,8 @@ export default class AboutUs extends Component {
 
     render() {
         return (
-            <div style={{ width: "100%", backgroundColor: "#12181c" }}>
-                <div style={{ display: "inline-block", width: "85%" }} className="slide-in">
+            <div style={{ width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
+                <div style={{ display: "inline-block", width: "85%", marginBottom: 20 }} className="slide-in">
                     <div style={{ marginTop: "30px", marginBottom: "30px" }}>
                         <Header as='h2' textAlign='center' style={{ color: "#29b02e" }}>
                             ES Formations avec une phrase d'accroche ?
@@ -23,17 +23,17 @@ export default class AboutUs extends Component {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw" }}>
                         <div>
-                            <Segment style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "#12181c" }} >
+                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
                                 <div>
                                     <Divider horizontal style={{ marginBottom: "40px" }}>
-                                        <Header textAlign='center' style={{ color: "white" }} >
+                                        <Header textAlign='center' style={{   }} >
                                             Qui sommes-nous ?
                                 </Header>
                                     </Divider>
                                 </div>
                                 <div style={{ display: "flex" }}>
                                     <div>
-                                        <p style={{ color: "white" }}>
+                                        <p style={{   }}>
                                             Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo
                                             locante vel cuius usibus apparatum. ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut
                                             conscius ductus est aliique congregati sunt ex diversis civitatibus multi, qui atrocium criminum ponderibus
@@ -51,19 +51,19 @@ export default class AboutUs extends Component {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
                         <div>
-                            <Segment style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "#12181c" }}>
+                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }}>
 
                                 <Divider horizontal style={{ marginBottom: "40px" }}>
-                                    <Header textAlign='center' style={{ color: "white" }}>
+                                    <Header textAlign='center' style={{   }}>
                                         Une équipe complémentaire
                                 </Header>
                                 </Divider>
                                 <div style={{ display: "flex" }}>
                                     <div>
                                         <Header textAlign='left' style={{ marginBottom: "10px" }}>
-                                            <Header.Subheader style={{ fontSize: "20px", color: "white" }}>Valérie Evesque</Header.Subheader>
+                                            <Header.Subheader style={{ fontSize: "20px",   }}>Valérie Evesque</Header.Subheader>
                                         </Header>
-                                        <p style={{ color: "white" }}>
+                                        <p style={{   }}>
                                             Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo
                                             locante vel cuius usibus apparatum. ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut
                                             conscius ductus est aliique congregati sunt ex diversis civitatibus multi, qui atrocium criminum ponderibus
@@ -80,9 +80,9 @@ export default class AboutUs extends Component {
                                 <div style={{ display: "flex" }}>
                                     <div>
                                         <Header textAlign='left' style={{ marginBottom: "10px" }}>
-                                            <Header.Subheader style={{ fontSize: "20px", color: "white" }}>Stéphanie Sabadel</Header.Subheader>
+                                            <Header.Subheader style={{ fontSize: "20px",   }}>Stéphanie Sabadel</Header.Subheader>
                                         </Header>
-                                        <p style={{ color: "white" }}>
+                                        <p style={{   }}>
                                             Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo
                                             locante vel cuius usibus apparatum. ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut
                                             conscius ductus est aliique congregati sunt ex diversis civitatibus multi, qui atrocium criminum ponderibus
@@ -99,32 +99,32 @@ export default class AboutUs extends Component {
                         </div>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
-                        <Segment style={{ textAlign: "justify", display: "flex", flexDirection: "row", width: "100%", backgroundColor: "#12181c" }}>
+                        <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "row", width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
                             <div style={{ width: "100%" }}>
                                 <Divider horizontal style={{ marginBottom: "40px" }}>
-                                    <Header textAlign='center' style={{ marginBottom: "5px", color: "white" }}>
+                                    <Header textAlign='center' style={{ marginBottom: "5px",   }}>
                                         Nos plus
                                 </Header>
                                 </Divider>
                                 <div>
-                                    <p style={{ color: "white" }}>Je sais pas</p>
+                                    <p style={{   }}>Je sais pas</p>
                                 </div>
                             </div>
                         </Segment>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
                         <div>
-                            <Segment style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "#12181c" }} >
+                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
                                 <div>
                                     <Divider horizontal style={{ marginBottom: "40px" }}>
-                                        <Header textAlign='center' style={{ color: "white" }} >
+                                        <Header textAlign='center' style={{   }} >
                                             Au sein de l’économie sociale
                                 </Header>
                                     </Divider>
                                 </div>
                                 <div style={{ display: "flex" }}>
                                     <div>
-                                        <p style={{ color: "white" }}>
+                                        <p style={{   }}>
                                             Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo
                                             locante vel cuius usibus apparatum. ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut
                                             conscius ductus est aliique congregati sunt ex diversis civitatibus multi, qui atrocium criminum ponderibus
@@ -142,17 +142,17 @@ export default class AboutUs extends Component {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
                         <div>
-                            <Segment style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "#12181c" }} >
+                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
                                 <div>
                                     <Divider horizontal style={{ marginBottom: "40px" }}>
-                                        <Header textAlign='center' style={{ color: "white" }} >
+                                        <Header textAlign='center' style={{   }} >
                                             Intégrée dans une coopérative d’activités et  d'emploi
                                 </Header>
                                     </Divider>
                                 </div>
                                 <div style={{ display: "flex" }}>
                                     <div>
-                                        <p style={{ color: "white" }}>
+                                        <p style={{   }}>
                                             Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo
                                             locante vel cuius usibus apparatum. ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut
                                             conscius ductus est aliique congregati sunt ex diversis civitatibus multi, qui atrocium criminum ponderibus

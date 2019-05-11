@@ -16,10 +16,11 @@ export default class CogSection extends Component {
             onMouseEnter={() => this.setState({ isFocused: true })}
             onMouseLeave={() => this.setState({ isFocused: false })}
             onClick={() => this.props.onClick()}
+            style={{ display: "flex", alignItems: "center", ...this.props.style }}
         >
-            <Icon name="cog" style={{ color: this.props.isSelected || this.state.isFocused ? "#29b02e" : "white" }} size="massive"></Icon>
-            <h2 style={{ marginTop: "30px", color: this.props.isSelected || this.state.isFocused ? "#29b02e" : "white" }}>{this.props.label}</h2>
-            <Icon name="triangle down" style={{ color: this.props.isSelected || this.state.isFocused ? "#29b02e" : "white" }} size="huge"></Icon>
+            <Icon name="cog" style={{ color: this.props.isSelected || this.state.isFocused ? "#29b02e" : "grey" }} size="massive"></Icon>
+            <h2 style={{ marginTop: "30px", color: this.props.isSelected || this.state.isFocused ? "#29b02e" : "grey" }}>{this.props.label}</h2>
+            <Icon name="triangle right" style={{ color: this.props.isSelected || this.state.isFocused ? "#29b02e" : "grey" }} size="huge"></Icon>
         </div>
         )
     }

@@ -26,6 +26,25 @@ export default class MainPage extends Component {
         window.addEventListener("resize", this.resize.bind(this));
         window.addEventListener('scroll', this.listenToScroll.bind(this))
         this.resize();
+        if (this.props.history.location.pathname.includes("/Workshops")) {
+            this.setState({ current: 2 })
+        } else if (this.props.history.location.pathname.includes("/Training")) {
+            this.setState({ current: 1 })
+        } else if (this.props.history.location.pathname.includes("/AboutUs")) {
+            this.setState({ current: 5 })
+        } else if (this.props.history.location.pathname.includes("/Contacts")) {
+            this.setState({ current: 4 })
+        } else if (this.props.history.location.pathname.includes("Calendar")) {
+            this.setState({ current: 0 })
+        } else if (this.props.history.location.pathname.includes("/Toolbox")) {
+            this.setState({ current: 3 })
+        }
+        this.props.history.listen((location, action) => {
+            console.log(location.pathname)
+            if (location.pathname.includes("/Lists")) {
+                this.setState({ current: 1 })
+            }
+        })
     }
 
     resize() {
@@ -48,6 +67,8 @@ export default class MainPage extends Component {
         })
     }
 
+
+
     componentWillUnmount() {
         window.removeEventListener("resize", this.resize.bind(this));
         window.removeEventListener('scroll', this.listenToScroll.bind(this))
@@ -64,7 +85,7 @@ export default class MainPage extends Component {
                 {(matches) =>
                     matches
                         ? <div className='sidebar-container'
-                            style={{ width: this.state.isFolded ? 100 : 200 }}>
+                            style={{ width: this.state.isFolded ? 100 : 250 }}>
                             <div
                                 onClick={() => { this.setState({ current: -1 }); this.props.history.push('/Home') }}
                             >
@@ -74,12 +95,12 @@ export default class MainPage extends Component {
                             <div className='sidebar-buttons-container'>
                                 <div
                                     className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 0 }); this.props.history.push('/Calendar') }}
+                                    onClick={() => { this.setState({ current: 2 }); this.props.history.push('/Workshops') }}
                                 >
                                     <SideBarButton
-                                        icon='calendar'
-                                        text='Calendrier'
-                                        isFocused={this.state.current === 0}
+                                        icon='book'
+                                        text='Nos ateliers'
+                                        isFocused={this.state.current === 2}
                                         focusedColor={"green"}
                                         unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
@@ -102,26 +123,12 @@ export default class MainPage extends Component {
                                 </div>
                                 <div
                                     className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 2 }); this.props.history.push('/Workshops') }}
+                                    onClick={() => { this.setState({ current: 5 }); this.props.history.push('/AboutUs') }}
                                 >
                                     <SideBarButton
-                                        icon='book'
-                                        text='Nos ateliers'
-                                        isFocused={this.state.current === 2}
-                                        focusedColor={"green"}
-                                        unFocusedColor={"grey"}
-                                        isFolded={this.state.isFolded}
-                                        isMoving={this.state.isMoving}
-                                    />
-                                </div>
-                                <div
-                                    className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 3 }); this.props.history.push('/Toolbox') }}
-                                >
-                                    <SideBarButton
-                                        icon='box'
-                                        text='Boîte à outils'
-                                        isFocused={this.state.current === 3}
+                                        icon='question'
+                                        text='Qui sommes-nous ?'
+                                        isFocused={this.state.current === 5}
                                         focusedColor={"green"}
                                         unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
@@ -144,12 +151,26 @@ export default class MainPage extends Component {
                                 </div>
                                 <div
                                     className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 5 }); this.props.history.push('/AboutUs') }}
+                                    onClick={() => { this.setState({ current: 0 }); this.props.history.push('/Calendar') }}
                                 >
                                     <SideBarButton
-                                        icon='question'
-                                        text='Qui sommes-nous ?'
-                                        isFocused={this.state.current === 5}
+                                        icon='calendar'
+                                        text='Calendrier'
+                                        isFocused={this.state.current === 0}
+                                        focusedColor={"green"}
+                                        unFocusedColor={"grey"}
+                                        isFolded={this.state.isFolded}
+                                        isMoving={this.state.isMoving}
+                                    />
+                                </div>
+                                <div
+                                    className="sidebar-button"
+                                    onClick={() => { this.setState({ current: 3 }); this.props.history.push('/Toolbox') }}
+                                >
+                                    <SideBarButton
+                                        icon='box'
+                                        text='Boîte à outils'
+                                        isFocused={this.state.current === 3}
                                         focusedColor={"green"}
                                         unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}

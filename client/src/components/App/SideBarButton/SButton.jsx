@@ -30,7 +30,7 @@ export default class SButton extends Component {
                                 ? ""
                                 : "SBbutton-icon"}
                             name={this.props.icon}
-                            size={this.props.size ? this.props.size : "huge"} />
+                            size={this.props.size ? this.props.size : "big"} />
                         {!this.props.isFolded && !this.props.isMoving
                             ? <h3 className="SBbutton-text">{this.props.text}</h3>
                             : null}

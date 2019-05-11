@@ -12,12 +12,12 @@ export default class Contacts extends Component {
     }
 
     render() {
-        return (<div style={{ width: "100%", backgroundColor: "#121613" }}>
+        return (<div style={{ width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
             <div style={{ width: "75%", display: "inline-block" }} className="slide-in">
-                <Header as='h1' style={{ marginTop: "30px", color: "white" }}>Contacts</Header>
+                <Header as='h1' style={{ marginTop: "30px" }}>Contacts</Header>
                 <div style={{ marginTop: "50px", display: "flex", flexDirection: "column" }}>
-                    <Segment style={{ width: "90%", marginLeft: "5%", backgroundColor: "#121613", "border-style": "dotted" }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", color: "white" }}>
+                    <Segment style={{ width: "90%", marginLeft: "5%", backgroundColor: "rgba(50,50,50,.05)", "border-style": "dotted" }}>
+                        <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <div style={{ textAlign: "justify" }}>
                                 <h2><Icon name="map marker alternate" /> Adresse</h2>
                                 <p>68 avenue du 8 mai 1945
