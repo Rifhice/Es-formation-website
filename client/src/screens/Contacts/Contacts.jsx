@@ -12,7 +12,7 @@ export default class Contacts extends Component {
     }
 
     render() {
-        return (<div style={{ width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
+        return (<div style={{ width: "100%", backgroundColor: "white", paddingTop: "50px" }}>
             <div style={{ width: "75%", display: "inline-block" }} className="slide-in">
                 <Header as='h1' style={{ marginTop: "30px" }}>Contacts</Header>
                 <div style={{ marginTop: "50px", display: "flex", flexDirection: "column" }}>

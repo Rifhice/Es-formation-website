@@ -84,37 +84,27 @@ export default class MainPage extends Component {
             <MediaQuery minDeviceWidth={700}>
                 {(matches) =>
                     matches
-                        ? <div className='sidebar-container'
-                            style={{ width: this.state.isFolded ? 100 : 250 }}>
+                        ? <div className='sidebar-container' style={{ borderBottom: "solid", borderWidth: ".5px", backgroundColor: `rgba(255,255,255,${this.state.theposition > 0.25 ? 1 : this.state.theposition === 0 ? 0 : this.state.theposition + 0.35})` }}>
                             <div
                                 onClick={() => { this.setState({ current: -1 }); this.props.history.push('/Home') }}
                             >
-                                <Image src='/logo.png' size='small' className='company-logo' />
+                                <div className='company-logo'>
+                                    <Image src='/logo.png' size='mini' />
+                                </div>
                             </div>
                             <Divider></Divider>
                             <div className='sidebar-buttons-container'>
                                 <div
                                     className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 2 }); this.props.history.push('/Workshops') }}
                                 >
                                     <SideBarButton
-                                        icon='book'
-                                        text='Nos ateliers'
-                                        isFocused={this.state.current === 2}
-                                        focusedColor={"green"}
-                                        unFocusedColor={"grey"}
-                                        isFolded={this.state.isFolded}
-                                        isMoving={this.state.isMoving}
-                                    />
-                                </div>
-                                <div
-                                    className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 1 }); this.props.history.push('/Training') }}
-                                >
-                                    <SideBarButton
-                                        icon='lightbulb'
-                                        text='Nos formations'
-                                        isFocused={this.state.current === 1}
+                                        text='Notre activité'
+                                        dropdown={[
+                                            { value: "Nos ateliers", key: "Nos ateliers", text: "Nos ateliers", onClick: () => { this.setState({ current: 2 }); this.props.history.push('/Workshops') } },
+                                            { value: "Nos formations", key: "Nos formations", text: "Nos formations", onClick: () => { this.setState({ current: 1 }); this.props.history.push('/Training') } },
+                                            { value: "Calendrier", key: "Calendrier", text: "Calendrier", onClick: () => { this.setState({ current: 0 }); this.props.history.push('/Calendar') } }
+                                        ]}
+                                        isFocused={this.state.current === 2 || this.state.current === 0 || this.state.current === 1}
                                         focusedColor={"green"}
                                         unFocusedColor={"grey"}
                                         isFolded={this.state.isFolded}
@@ -151,20 +141,6 @@ export default class MainPage extends Component {
                                 </div>
                                 <div
                                     className="sidebar-button"
-                                    onClick={() => { this.setState({ current: 0 }); this.props.history.push('/Calendar') }}
-                                >
-                                    <SideBarButton
-                                        icon='calendar'
-                                        text='Calendrier'
-                                        isFocused={this.state.current === 0}
-                                        focusedColor={"green"}
-                                        unFocusedColor={"grey"}
-                                        isFolded={this.state.isFolded}
-                                        isMoving={this.state.isMoving}
-                                    />
-                                </div>
-                                <div
-                                    className="sidebar-button"
                                     onClick={() => { this.setState({ current: 3 }); this.props.history.push('/Toolbox') }}
                                 >
                                     <SideBarButton
@@ -177,18 +153,6 @@ export default class MainPage extends Component {
                                         isMoving={this.state.isMoving}
                                     />
                                 </div>
-                            </div>
-                            <div className='sidebar-icon-container'>
-                                <Icon
-                                    name={this.state.isFolded ? 'right arrow' : 'left arrow'}
-                                    className='sidebar-size-button'
-                                    size="large"
-                                    color="grey"
-                                    onClick={() => {
-                                        this.setState({ isFolded: !this.state.isFolded, isMoving: true })
-                                        setTimeout(() => this.setState({ isMoving: false }), 1000)
-                                    }}
-                                />
                             </div>
                         </div>
                         : <div style={{ position: "fixed", left: "20px", top: "20px", zIndex: 10, opacity: this.state.theposition > 0 && !this.state.mobileDisplayBar ? this.state.theposition < 0.5 ? 1 - this.state.theposition : .5 : 1 }}>

@@ -40,7 +40,7 @@ export default class Training extends Component {
 
     render() {
         const selected = queryString.parse(this.props.location.search).selected && queryString.parse(this.props.location.search).selected.match(/^\d+$/) ? queryString.parse(this.props.location.search).selected : this.state.current
-        return (<div style={{ width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
+        return (<div style={{ width: "100%", backgroundColor: "white", paddingTop: "50px" }}>
             <div style={{ width: "75%", display: "inline-block" }} className="slide-in">
                 <Header as='h1' style={{ marginTop: "30px", color: "#29b02e" }}>Se former et former ses équipes</Header>
                 <h3 style={{ marginTop: "30px", textAlign: "justify" }}>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</h3>
