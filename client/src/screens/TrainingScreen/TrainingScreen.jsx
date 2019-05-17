@@ -23,7 +23,8 @@ export default class Training extends Component {
                 program: [{ title: "Le stress en situation professionnelle", bulletPoints: ["Approche théorique sur les mécanismes physiologiques.", "Approches pratiques et réalisation de sa méthode d’auto-adaptation antistress.", "Le stress : facteur d’équilibre et de biodiversité dans l’entreprise."] },
                 { "title": "Les émotions", bulletPoints: ["Le rôle et mécanismes physiologiques.", "Outils d’auto-adaptation de gestion des émotions.", "Les émotions : aide et soutien à la relation d’équipe."] },
                 { title: "Être acteur et auteur de son environnement socio-professionnel", bulletPoints: ["Quels outils et quelles habiletés de communication pour gérer les conflits.", "Qualité de vie au travail : quel cercle vertueux."] }
-                ]
+                ],
+                evaluations: ["Évaluation diagnostique avant la formation.", "Évaluations à chaud en fin de journée présentielle et une évaluation finale.", "Attestation de fin de formation."]
             },
             {
                 title: "Neurosciences et enfance",
@@ -33,7 +34,8 @@ export default class Training extends Component {
                 methods: ["Alternance de manière dynamique d’approches théoriques et pratiques.", "Jeux coopératifs (compétences psychosociales)."],
                 program: [{ title: "", bulletPoints: ["Les neurosciences affectives et le développement du cerveau de l’enfant"] },
                 { "title": "", bulletPoints: ["Comment adapter les pratiques professionnelles pour accompagner l’enfant dans ses émotions et la gestion du stress"] },
-                ]
+                ],
+                evaluations: ["Évaluation diagnostique avant la formation.", "Évaluations à chaud en fin de journée présentielle et une évaluation finale.", "Attestation de fin de formation."]
             }
         ]
     }
@@ -68,6 +70,7 @@ export default class Training extends Component {
                         targets={this.formations[selected].targets}
                         methods={this.formations[selected].methods}
                         program={this.formations[selected].program}
+                        evaluations={this.formations[selected].evaluations}
                     />
                 </div>
             </div>

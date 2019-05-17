@@ -39,24 +39,12 @@ export default class CogSection extends Component {
                             <p style={{}}>{point}</p>
                         </div>)}
                     </div>) : "Pas de programme."} </p>
-                    <div style={{ marginLeft: 30 }}>
-                        <h3 style={{ marginTop: "30px", textAlign: "justify", "color": "#29b02e" }}>Déroulement</h3>
-                        <Divider />
-                        {this.props.schedule && this.props.schedule.map(step =>
-                            <div style={{ display: "flex" }}>
-                                <Icon name="triangle right" style={{}}></Icon>
-                                <p style={{}}>{step}</p>
-                            </div>)}
-                    </div>
-                    <div style={{ marginLeft: 30 }}>
-                        <h3 style={{ marginTop: "30px", textAlign: "justify", "color": "#29b02e" }}>Contenu</h3>
-                        <Divider />
-                        {this.props.schedule && this.props.schedule.map(step =>
-                            <div style={{ display: "flex" }}>
-                                <Icon name="triangle right" style={{}}></Icon>
-                                <p style={{}}>{step}</p>
-                            </div>)}
-                    </div>
+                    <h2 style={{ marginTop: "30px", "color": "#29b02e" }}>Evaluation</h2>
+                    <Divider style={{ width: "90%" }} />
+                    <p style={{ textAlign: "justify" }}>{this.props.evaluations ? this.props.evaluations.map(evaluation => <div style={{ display: "flex", marginBottom: 20 }}>
+                        <Icon name="triangle right" style={{}}></Icon>
+                        <p style={{}}>{evaluation}</p>
+                    </div>) : "Pas d'évaluation."} </p>
                 </div>
                 <div style={{ flex: 1 }}>
                     <h2 style={{ marginTop: "30px", "color": "#29b02e" }}>Public</h2>
@@ -73,6 +61,21 @@ export default class CogSection extends Component {
                             <Icon name="triangle right" style={{}}></Icon>
                             <p style={{}}>{target}</p>
                         </div>)}
+                    <h2 style={{ marginTop: "30px", "color": "#29b02e" }}>Formatrices</h2>
+                    <Divider style={{ width: "90%" }} />
+                    <div style={{ textAlign: "left" }}>
+                        <h3>Valérie Evesque</h3>
+                        <p>Sophrologue - Animatrice LAEP</p>
+                        <h3>Stéphanie Sabadel</h3>
+                        <p>Éducatrice Jeune Enfance</p>
+                    </div>
+                    <h2 style={{ marginTop: "30px", "color": "#29b02e" }}>Moyens techniques</h2>
+                    <Divider style={{ width: "90%" }} />
+                    <div style={{ textAlign: "left" }}>
+                        <p>Support de cours remis en fin de
+formation, outils numériques et
+papiers.</p>
+                    </div>
                     <h2 style={{ marginTop: "30px", "color": "#29b02e" }}>Contacts</h2>
                     <Divider style={{ width: "90%" }} />
                     <h3>es-formation@gmail.com
