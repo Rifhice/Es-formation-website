@@ -10,7 +10,7 @@
     "dev": "npm run init:db && nodemon server.js",
     "init:db": "node config/initDB.js",
     "test": "nyc mocha api/test/*.js --timeout 10000 --recursive --exit",
-    "heroku-postbuild": "cd client && npm install --only=dev  && npm run build"
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
