@@ -12,33 +12,42 @@ export default class SButton extends Component {
     render() {
         return (
             <div style={{ width: "100%", backgroundColor: "white" }}>
-                <div style={{ width: "100%", background: `url(./background.png) no-repeat center`, height: "100vh" }}>
-
-                </div>
-                <div style={{
-                    marginTop: 25, backgroundColor: "rgba(50,50,50,.05)", padding: 20, width: "100%"
-                }}>
-                    <h2 style={{ "color": "#29b02e" }}>Education a la santé</h2>
-                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
-                        <div>
-                            <h3>Formation</h3>
-                        </div>
-                        <div>
-                            <h3>Education</h3>
-                        </div>
+                <div style={{ width: "100%", background: `url(./background.jpg) no-repeat center`, height: "100vh", display: "flex", justifyContent: "center" }}>
+                    <div style={{ marginTop: 67 }}>
+                        <h1 style={{ marginTop: 25, fontSize: "4rem", color: "white", textShadow: "1px 1px #5284bd" }}>ES Formations</h1>
+                        <h1 style={{ position: "absolute", fontSize: "3rem", color: "white", textShadow: "1px 1px #5284bd", bottom: 35, left: 0, width: "100%", textAlign: "center" }}>S'Épanouir pour Soi réussir EnSemble</h1>
                     </div>
                 </div>
-                <div style={{ marginTop: 25, width: "100%", display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <h2 style={{ "color": "#29b02e" }}>Nos plus-values</h2>
+                <div style={{
+                    backgroundColor: "rgba(50,50,50,.05)", padding: 20, width: "100%", display: "flex", justifyContent: "center", height: "400px"
+                }}>
+                    <div style={{ display: "flex", width: "80%", maxWidth: "1150px", flexDirection: "column" }}>
+                        <h2 style={{ "color": "#5284bd" }}>Nos actions en Éducation à la Santé :</h2>
+                        <h2 style={{ "color": "#5284bd" }}>Des Formations  et   Des  Animations </h2>
+                        <h2 style={{ "color": "#5284bd" }}> L'éducation pour la santé en quelques mots:</h2>
+                        <p style={{ textAlign: "justify" }}>"L'éducation pour la santé est un ensemble de méthodes et de démarches pédagogiques et de communication parmi d'autres (formations et animations) au service de la promotion de la santé et de la prévention, pour accroître l'autonomie, la capacité de faire des choix favorables à la santé,
+        en respectant la liberté, en promouvant la responsabilité des personnes,
+        en développant les connaissances et les compétences,
+        en favorisant l'estime de soi et l'attention aux autres" .
+        (C. Bouchet. Zoom sur la prévention, l'éducation pour la santé, la promotion de la santé. Oct. 2000)
+                        </p>
+                        <p style={{ textAlign: "justify" }}>
+                            “L’éducation pour la santé a pour objectif que chaque citoyen acquière tout au long de sa vie les compétences et les moyens qui lui permettront de promouvoir sa santé et sa qualité de vie ainsi que celles de la collectivité”. (INPES 2001)
+                            Elle s’adresse à la population dans toute sa diversité avec le souci d’être accessible à chacun.
+                        </p>
+                    </div>
+                </div>
+                <div style={{ marginTop: 25, width: "100%", display: "flex", flexDirection: "column", alignItems: "center", height: "300px" }}>
+                    <h2 style={{ "color": "#5284bd", marginBottom: 20 }}>Nos plus-values</h2>
                     <div style={{ display: "flex", width: "80%", maxWidth: "1150px", justifyContent: "center" }}>
                         <div>
-                            <p style={{ textAlign: "justify" }}>
+                            <h3 style={{ textAlign: "justify" }}>
                                 <Icon name="right arrow" />20 ans d’expériences réunis dans ES Formations
     permettant de développer les compétences psychosociales dans votre entreprise
-                                </p>
-                            <p style={{ textAlign: "justify" }}>
+                                </h3>
+                            <h3 style={{ textAlign: "justify" }}>
                                 <Icon name="right arrow" />ES Formations, exigence de qualité du label” Certif Région” dans la Scop Mine de Formateurs
-                                </p>
+                                </h3>
                         </div>
                         <div style={{
                             marginLeft: "5vw"
@@ -47,8 +56,8 @@ export default class SButton extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundColor: "rgba(50,50,50,.05)", padding: 20, marginTop: 50, width: "100%", display: "flex", flexDirection: "column", alignItems: "center" }}>
-                    <h2 style={{ "color": "#29b02e" }}>Une structure de l’économie sociale et solidaire (ESS)</h2>
+                <div style={{ backgroundColor: "rgba(50,50,50,.05)", padding: 20, width: "100%", display: "flex", flexDirection: "column", alignItems: "center", height: "300px" }}>
+                    <h2 style={{ "color": "#5284bd", marginBottom: 20 }}>Une structure de l’économie sociale et solidaire (ESS)</h2>
                     <div style={{ width: "80%", display: "flex", maxWidth: "1150px", justifyContent: "center" }}>
                         <div style={{
                             marginRight: "2vw"
@@ -65,7 +74,7 @@ export default class SButton extends Component {
                     </div>
                 </div>
                 <div style={{ marginTop: 25, padding: 20, width: "100%" }}>
-                    <h2 style={{ "color": "#29b02e" }}>Actualités</h2>
+                    <h2 style={{ "color": "#5284bd" }}>Actualités</h2>
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
                         <div>
                             <h4>La qualité de vie au travail : qu'est ce que c'est ?</h4>
@@ -80,7 +89,7 @@ export default class SButton extends Component {
                     </div>
                 </div>
                 <Footer></Footer>
-            </div>
+            </div >
         )
     }
 }

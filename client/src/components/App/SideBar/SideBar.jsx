@@ -84,7 +84,7 @@ export default class MainPage extends Component {
             <MediaQuery minDeviceWidth={700}>
                 {(matches) =>
                     matches
-                        ? <div className='sidebar-container' style={{ borderBottom: "solid", borderWidth: ".5px", backgroundColor: `rgba(255,255,255,${this.state.theposition > 0.25 ? 1 : this.state.theposition === 0 ? 0 : this.state.theposition + 0.35})` }}>
+                        ? <div className='sidebar-container' style={{ borderBottom: "solid", borderWidth: ".5px", backgroundColor: `rgba(255,255,255,${this.props.history.location.pathname.includes("/Home") ? 1 : this.state.theposition > 0.25 ? 1 : this.state.theposition === 0 ? 0 : this.state.theposition + 0.35})` }}>
                             <div
                                 onClick={() => { this.setState({ current: -1 }); this.props.history.push('/Home') }}
                             >
