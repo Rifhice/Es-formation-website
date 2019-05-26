@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon, Image, Segment, Header } from 'semantic-ui-react'
 import Footer from '../../components/App/Footer'
 import './style.css'
+import colors from "../../helpers/colors"
 
 export default class Contacts extends Component {
 
@@ -14,7 +15,7 @@ export default class Contacts extends Component {
     render() {
         return (<div style={{ width: "100%", backgroundColor: "white", paddingTop: "50px" }}>
             <div style={{ width: "75%", display: "inline-block" }} className="slide-in">
-                <Header as='h1' style={{ marginTop: "30px" }}>Contacts</Header>
+                <Header as='h1' style={{ marginTop: "30px", color: colors.mainColor }}>Contacts</Header>
                 <div style={{ marginTop: "50px", display: "flex", flexDirection: "column" }}>
                     <Segment style={{ width: "90%", marginLeft: "5%", backgroundColor: "rgba(50,50,50,.05)", "border-style": "dotted" }}>
                         <div style={{ display: "flex", justifyContent: "space-between" }}>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Header, Menu, Icon, Segment, Sidebar, Image, Divider } from 'semantic-ui-react'
 import MediaQuery from 'react-responsive';
 import './style.css'
+import colors from "../../../helpers/colors"
 
 export default class MainPage extends Component {
 
@@ -35,12 +36,12 @@ export default class MainPage extends Component {
                             <div style={{ marginTop: "50px", textAlign: "justify", }}>
                                 <h3><Icon name="linkify" />Links</h3>
                                 <div style={{ display: "flex", flexDirection: "column" }}>
-                                    <a style={{ "color": "#29b02e" }} href="/Home"><Icon name="home" />Acceuil</a>
-                                    <a style={{ "color": "#29b02e" }} href="/Calendar"><Icon name="calendar" />Calendrier</a>
-                                    <a style={{ "color": "#29b02e" }} href="/"><Icon name="lightbulb" />Nos formations</a>
-                                    <a style={{ "color": "#29b02e" }} href="/"><Icon name="book" />Nos ateliers</a>
-                                    <a style={{ "color": "#29b02e" }} href="/"><Icon name="box" />Boîte à outils</a>
-                                    <a style={{ "color": "#29b02e" }} href="/AboutUs"><Icon name="question" />Qui sommes-nous?</a>
+                                    <a style={{ "color": colors.mainColors }} href="/Home"><Icon name="home" />Acceuil</a>
+                                    <a style={{ "color": colors.mainColors }} href="/Calendar"><Icon name="calendar" />Calendrier</a>
+                                    <a style={{ "color": colors.mainColors }} href="/"><Icon name="lightbulb" />Nos formations</a>
+                                    <a style={{ "color": colors.mainColors }} href="/"><Icon name="book" />Nos ateliers</a>
+                                    <a style={{ "color": colors.mainColors }} href="/"><Icon name="box" />Boîte à outils</a>
+                                    <a style={{ "color": colors.mainColors }} href="/AboutUs"><Icon name="question" />Qui sommes-nous?</a>
                                 </div>
                             </div>
                             <div style={{ marginTop: "50px", textAlign: "justify", }}>
@@ -81,12 +82,12 @@ export default class MainPage extends Component {
                             <div style={{ marginTop: "50px", textAlign: "justify" }}>
                                 <Icon name="linkify" />
                                 <div style={{ display: "flex", flexDirection: "column" }}>
-                                    <a style={{ "background-color": "#29b02e" }} href="/Home"><Icon name="home" />Acceuil</a>
-                                    <a style={{ "background-color": "#29b02e" }} href="/Calendar"><Icon name="calendar" />Calendrier</a>
-                                    <a style={{ "background-color": "#29b02e" }} href="/"><Icon name="lightbulb" />Nos formations</a>
-                                    <a style={{ "background-color": "#29b02e" }} href="/"><Icon name="book" />Nos ateliers</a>
-                                    <a style={{ "background-color": "#29b02e" }} href="/"><Icon name="box" />Boîte à outils</a>
-                                    <a style={{ "background-color": "#29b02e" }} href="/AboutUs"><Icon name="question" />Qui sommes-nous?</a>
+                                    <a style={{ "background-color": "#5284bd" }} href="/Home"><Icon name="home" />Acceuil</a>
+                                    <a style={{ "background-color": "#5284bd" }} href="/Calendar"><Icon name="calendar" />Calendrier</a>
+                                    <a style={{ "background-color": "#5284bd" }} href="/"><Icon name="lightbulb" />Nos formations</a>
+                                    <a style={{ "background-color": "#5284bd" }} href="/"><Icon name="book" />Nos ateliers</a>
+                                    <a style={{ "background-color": "#5284bd" }} href="/"><Icon name="box" />Boîte à outils</a>
+                                    <a style={{ "background-color": "#5284bd" }} href="/AboutUs"><Icon name="question" />Qui sommes-nous?</a>
                                 </div>
                             </div>
                             <div style={{ marginTop: "50px", textAlign: "justify" }}>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon, Image, Header, Segment, Container, Divider } from 'semantic-ui-react'
 import Footer from '../../components/App/Footer'
 import './style.css'
+import colors from "../../helpers/colors"
 
 export default class AboutUs extends Component {
 
@@ -17,13 +18,13 @@ export default class AboutUs extends Component {
             <div style={{ width: "100%", backgroundColor: "white", paddingTop: "50px" }}>
                 <div style={{ display: "inline-block", width: "85%", marginBottom: 20 }} className="slide-in">
                     <div style={{ marginTop: "30px", marginBottom: "30px" }}>
-                        <Header as='h2' textAlign='center' style={{ color: "#29b02e" }}>
+                        <Header as='h2' textAlign='center' style={{ color: colors.mainColor }}>
                             ES Formations avec une phrase d'accroche ?
                     </Header>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw" }}>
                         <div>
-                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
+                            <Segment color="blue" style={{textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
                                 <div>
                                     <Divider horizontal style={{ marginBottom: "40px" }}>
                                         <Header textAlign='center' style={{}} >
@@ -51,7 +52,7 @@ export default class AboutUs extends Component {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
                         <div>
-                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }}>
+                            <Segment color="blue" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }}>
 
                                 <Divider horizontal style={{ marginBottom: "40px" }}>
                                     <Header textAlign='center' style={{}}>
@@ -99,7 +100,7 @@ export default class AboutUs extends Component {
                         </div>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
-                        <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "row", width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
+                        <Segment color="blue" style={{ textAlign: "justify", display: "flex", flexDirection: "row", width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
                             <div style={{ width: "100%" }}>
                                 <Divider horizontal style={{ marginBottom: "40px" }}>
                                     <Header textAlign='center' style={{ marginBottom: "5px", }}>
@@ -114,7 +115,7 @@ export default class AboutUs extends Component {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
                         <div>
-                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
+                            <Segment color="blue" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
                                 <div>
                                     <Divider horizontal style={{ marginBottom: "40px" }}>
                                         <Header textAlign='center' style={{}} >
@@ -142,7 +143,7 @@ export default class AboutUs extends Component {
                     </div>
                     <div style={{ display: "flex", alignItems: "center", marginLeft: "5vw", marginRight: "5vw", marginTop: "20px" }}>
                         <div>
-                            <Segment color="green" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
+                            <Segment color="blue" style={{ textAlign: "justify", display: "flex", flexDirection: "column", backgroundColor: "rgba(50,50,50,.05)" }} >
                                 <div>
                                     <Divider horizontal style={{ marginBottom: "40px" }}>
                                         <Header textAlign='center' style={{}} >

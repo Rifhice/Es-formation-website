@@ -1,3 +1,3 @@
 module.exports = {
-    mainColor: "#daeddb"
+    mainColor: "#5284bd"
 }

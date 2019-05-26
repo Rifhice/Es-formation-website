@@ -3,6 +3,7 @@ import { Button, Header, Menu, Icon, Segment, Transition, Image, Divider } from 
 import MediaQuery from 'react-responsive';
 import SideBarButton from '../SideBarButton'
 import './style.css'
+import colors from "../../../helpers/colors"
 
 export default class MainPage extends Component {
 
