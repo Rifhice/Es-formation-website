@@ -22,7 +22,7 @@ class App extends Component {
         <ConnectedRouter history={history}>
           <div className="App">
             <div className='main-page'>
-              <SideBar />
+              {/* <SideBar /> */}
               <Switch>
                 <Route exact path="/Home" component={HomeScreen} />
                 <Route exact path="/Calendar" component={CalendarScreen} />

@@ -16,42 +16,34 @@ export default class SButton extends Component {
                     </div>
                 </div>
                 <div style={{
-                    backgroundColor: "rgba(50,50,50,.05)", padding: 20, width: "100%", display: "flex", justifyContent: "center", height: "400px"
+                    backgroundColor: "rgba(50,50,50,.05)", padding: 20, width: "100%", display: "flex", justifyContent: "center", flexDirection: "column",
+
                 }}>
-                    <div style={{ display: "flex", width: "80%", maxWidth: "1150px", flexDirection: "column" }}>
-                        <h2 style={{ "color": colors.mainColor }}> L'éducation pour la santé par formations et animations</h2>
-                        <h3 style={{ textAlign: "justify", fontWeight: 500 }}>"L'éducation pour la santé est un ensemble de méthodes et de démarches pédagogiques et de communication parmi d'autres (formations et animations) au service de la promotion de la santé et de la prévention, pour accroître l'autonomie, la capacité de faire des choix favorables à la santé,
-        en respectant la liberté, en promouvant la responsabilité des personnes,
-        en développant les connaissances et les compétences,
-        en favorisant l'estime de soi et l'attention aux autres" .
-        (C. Bouchet. Zoom sur la prévention, l'éducation pour la santé, la promotion de la santé. Oct. 2000)
-                        </h3>
-                        <h3 style={{ textAlign: "justify", fontWeight: 500 }}>
-                            “L’éducation pour la santé a pour objectif que chaque citoyen acquière tout au long de sa vie les compétences et les moyens qui lui permettront de promouvoir sa santé et sa qualité de vie ainsi que celles de la collectivité”. (INPES 2001)
-                            Elle s’adresse à la population dans toute sa diversité avec le souci d’être accessible à chacun.
+                    <div style={{ display: "flex", width: "100%", flexDirection: "column", paddingLeft: '10%', paddingRight: '10%' }}>
+                        <h2 style={{ "color": colors.mainColor }}>Notre domaine d’intervention, l’Éducation à la Santé :</h2>
+                        <h3 style={{ textAlign: "justify", fontWeight: 500 }}>"L’éducation pour la santé a pour objectif que chaque citoyen acquière tout au long de sa vie les compétences et les moyens qui lui permettront de promouvoir sa santé et sa qualité de vie ainsi que celles de la collectivité”  (INPES 2001) en : <br />
+                            <h3 style={{ textAlign: "justify", fontWeight: 500 }}>
+                                - en respectant la liberté, en promouvant la responsabilité des personnes,<br />
+                                - en développant les connaissances et les compétences,<br />
+                                - en favorisant l'estime de soi et l'attention aux autres".<br />
+                            </h3>
+                            Pour que les personnes adoptent des comportements plus favorables à leur santé et à celles des autres, diverses approches ont été utilisées (les leçons de bonne santé, la peur, par exemple). Nous vous proposons une autre démarche : le développement des compétences psychosociales  c’est-à-dire la capacité à mobiliser un ensemble de ressources (savoirs, savoir-faire, savoir-être) pour répondre avec efficacité aux exigences et aux épreuves de la vie quotidienne.<br /><br />
+
+                            Savoir résoudre des problèmes, Savoir communiquer efficacement son deux des dix compétences que nous vous proposons de cultiver en participant à nos ateliers et nos formations.
                         </h3>
                     </div>
-                </div>
-                <div style={{ marginTop: 25, width: "100%", display: "flex", flexDirection: "column", alignItems: "center", height: "300px" }}>
-                    <h2 style={{ "color": colors.mainColor, marginBottom: 20 }}>Nos plus-values</h2>
-                    <div style={{ display: "flex", width: "80%", maxWidth: "1150px", justifyContent: "center" }}>
-                        <div>
-                            <h3 style={{ textAlign: "justify", fontWeight: 500 }}>
-                                <Icon name="right arrow" />20 ans d’expériences réunis dans ES Formations
-    permettant de développer les compétences psychosociales dans votre entreprise
-                                </h3>
-                            <h3 style={{ textAlign: "justify", fontWeight: 500 }}>
-                                <Icon name="right arrow" />ES Formations, exigence de qualité du label” Certif Région” dans la Scop Mine de Formateurs
-                                </h3>
+                    <div style={{ display: "flex", justifyContent: "space-around", marginTop: 15, marginBottom: 15 }}>
+                        <div onClick={() => { }}>
+                            <Image src="atelier.jpg" style={{ width: "150px" }} />
+                            <p>Nos ateliers</p>
                         </div>
-                        <div style={{
-                            marginLeft: "5vw"
-                        }}>
-                            <Image onClick={() => window.open("https://www.minedeformateurs.fr/")} src='data:image/png;base64,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' size="medium" />
+                        <div onClick={() => { }}>
+                            <Image src="formation.jpg" style={{ width: "150px" }} />
+                            <p>Nos formations</p>
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundColor: "rgba(50,50,50,.05)", padding: 20, width: "100%", display: "flex", flexDirection: "column", alignItems: "center", height: "300px" }}>
+                <div style={{ backgroundColor: "white", padding: 20, width: "100%", display: "flex", flexDirection: "column", alignItems: "center", height: "300px" }}>
                     <h2 style={{ "color": colors.mainColor, marginBottom: 20 }}>Une structure de l’économie sociale et solidaire (ESS)</h2>
                     <div style={{ width: "80%", display: "flex", maxWidth: "1150px", justifyContent: "center" }}>
                         <div style={{
@@ -68,7 +60,7 @@ export default class SButton extends Component {
                         </div>
                     </div>
                 </div>
-                <div style={{ marginTop: 25, padding: 20, width: "100%" }}>
+                <div style={{ marginTop: 25, padding: 20, width: "100%", backgroundColor: "rgba(50,50,50,.05)" }}>
                     <h2 style={{ "color": colors.mainColor }}>Actualités</h2>
                     <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
                         <div>
@@ -79,7 +71,9 @@ export default class SButton extends Component {
                         </div>
                         <div>
                             <h4>La qualité de vie au travail : qu'est ce que c'est ?</h4>
-                            <Image src="https://i.ytimg.com/vi/uF18PgutL8Y/hqdefault.jpg" />
+                            <Image src="bagnols.png" size="medium"
+                                onClick={() => window.open('https://www.bagnols-les-bains.com/escale-maman-bebe/')}
+                            />
                         </div>
                     </div>
                 </div>
