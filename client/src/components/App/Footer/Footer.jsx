@@ -36,26 +36,25 @@ export default class MainPage extends Component {
                             <div style={{ marginTop: "50px", textAlign: "justify", }}>
                                 <h3><Icon name="linkify" />Links</h3>
                                 <div style={{ display: "flex", flexDirection: "column" }}>
-                                    <a style={{ "color": colors.mainColors }} href="/Home"><Icon name="home" />Acceuil</a>
-                                    <a style={{ "color": colors.mainColors }} href="/Calendar"><Icon name="calendar" />Calendrier</a>
-                                    <a style={{ "color": colors.mainColors }} href="/"><Icon name="lightbulb" />Nos formations</a>
-                                    <a style={{ "color": colors.mainColors }} href="/"><Icon name="book" />Nos ateliers</a>
-                                    <a style={{ "color": colors.mainColors }} href="/"><Icon name="box" />Boîte à outils</a>
-                                    <a style={{ "color": colors.mainColors }} href="/AboutUs"><Icon name="question" />Qui sommes-nous?</a>
+                                    <a style={{ "color": colors.mainColors }} /*href="/Home"*/><Icon name="home" />Acceuil</a>
+                                    <a style={{ "color": colors.mainColors }} /*href="/Calendar"*/><Icon name="calendar" />Calendrier</a>
+                                    <a style={{ "color": colors.mainColors }} /*href="/"*/><Icon name="lightbulb" />Nos formations</a>
+                                    <a style={{ "color": colors.mainColors }} /*href="/"*/><Icon name="book" />Nos ateliers</a>
+                                    <a style={{ "color": colors.mainColors }} /*href="/"*/><Icon name="box" />Boîte à outils</a>
+                                    <a style={{ "color": colors.mainColors }} /*href="/AboutUs"*/><Icon name="question" />Qui sommes-nous?</a>
                                 </div>
                             </div>
                             <div style={{ marginTop: "50px", textAlign: "justify", }}>
                                 <h3><Icon name="map marker alternate" /> Adresse</h3>
-                                <p>68 avenue du 8 mai 1945
+                                <p>9 bd du soubeyran
                                     <br />
                                     48000 Mende
                                     <br />
                                     France, Lozère
                                 </p>
                                 <h3><Icon name="address card" /> Business</h3>
-                                <p>es-formation@gmail.com
-                                    <br />+33 4 66 49 29 74
-                                    <br />+33 4 66 49 29 74
+                                <p>esformations48@gmail.com
+                                    <br />+33 6 80 38 36 62
                                 </p>
                             </div>
                             <div style={{ marginTop: "50px", textAlign: "justify", }}>
