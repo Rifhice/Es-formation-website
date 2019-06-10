@@ -70,7 +70,7 @@ export default class SButton extends Component {
                                 src="https://i.ytimg.com/vi/uF18PgutL8Y/hqdefault.jpg" />
                         </div>
                         <div>
-                            <h4>La qualité de vie au travail : qu'est ce que c'est ?</h4>
+                            <h4>Offres avantageuses pour les CE d'entreprises.</h4>
                             <Image src="bagnols.png" size="medium"
                                 onClick={() => window.open('https://www.bagnols-les-bains.com/escale-maman-bebe/')}
                             />
